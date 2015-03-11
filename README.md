@@ -10,6 +10,18 @@ starting from a Minimum Viable Product, then adding more capabilities:
 6. Interact with what is playing via the web server on the Pi running an HTML5 jQuery app.
 7. Videos using https://flowplayer.org/player/
 
+# Board choices
+There's Arduino, Raspberry Pi, and Tessel.
+
+Arduio boards do not have the horsepower to output to HDMI.
+
+Coming August of 2015 is the $35 Tessel 2 from Technical Machines https://tessel.io/
+embeds Node.js in a board with WiFi.
+a 580MHz Mediatek 7620N MIPS based SoC for most processing and WiFi (802.11b/g/n) communication
+2 USB ports.
+
+So for early 2015, the hardware is Raspberry Pi.
+
 # Ingredients to buy
 There are several editions of the Raspberry Pi.
 
@@ -17,7 +29,9 @@ There are several editions of the Raspberry Pi.
 2. UPS battery for TV.
 3. HDMI cable.
 4. The Raspberry Pi 2 Model B came out in 2014 with an upgraded ARMv7 quadcore processor, and a full Gigabyte of RAM.
-Prior Pis had 512MB RAM. Software needs to be recompiled.
+Prior Pis had 512MB RAM. 
+http://www.linux.com/news/embedded-mobile/mobile-linux/813223-performance-testing-the-new-35-raspberry-pi-2-
+
 Hardware-wise, the Pi 2 keeps the same shape, connectors and mounting holes as the Raspberry Pi B+. 
 The same HATs can be plugged in. See http://elinux.org/RPi_Buying_Guide
 
@@ -67,6 +81,7 @@ https://learn.adafruit.com/adafruits-raspberry-pi-lesson-2-first-time-configurat
 ## SSH
 http://elinux.org/RPi_A_Method_for_ssh_blind_login
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh?view=all
+
 1. Open LX Terminal on your Pi
 2. sudo raspi-config
 3. Enable SSH
@@ -79,8 +94,12 @@ http://elinux.org/RPi_Wheezy_VNC
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable?view=all
 To supply the power for your Pi so you do not need keyboard, mouse or display attached to the Pi to log into it.
 
+Pressing Alt-F1 through Alt-F12 will switch you one of them. If X11 has already started, you’ll often need to press Ctrl-Alt-F1 to ‘break out’, and just Alt-F2 etc thereafter. X11 will take the next available slot, since the default Raspbian defines six consoles, this is usually at Alt-F7.
+
 ## Chromium OS
 https://lokir.wordpress.com/2012/09/16/raspberry-pi-kiosk-mode-with-chromium/
+
+http://blogs.wcode.org/2013/09/howto-boot-your-raspberry-pi-into-a-fullscreen-browser-kiosk/
 
 http://www.chromium.org/chromium-os
 
@@ -110,7 +129,9 @@ https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup
 3. git Python
 3. GPIO (General Purpose Input Output) 
 
- 
+http://www.modern-industry.com/articles/7-super-simple-raspberry-pi-video-kiosk
+
+
 # Not reinventing the wheel
 The above is the collective wisdom from several others who have written about similar quest than mine.
 

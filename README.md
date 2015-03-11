@@ -40,13 +40,14 @@ There are several editions of the Raspberry Pi.
 3. TV mount on wall.
 4. HDMI cable
 
-Don't get the $69.99 kit at http://www.amazon.com/Guide-Clear-Case-Power-Supply-WiFi-Dongle-Kingston-Adapter-HDMI/dp/B00MV6TAJI/ref=wilsonslifenotes because its wifi chip is crap (13 second ping vs 2 on others).
+    Don't get the $69.99 kit at http://www.amazon.com/Guide-Clear-Case-Power-Supply-WiFi-Dongle-Kingston-Adapter-HDMI/dp/B00MV6TAJI/ref=wilsonslifenotes because its wifi chip is crap (13 second ping vs 2 on others).
 
 5. $44.99 Raspberry Pi board from http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I/ref=wilsonslifenotes
 6. 8 GB Class 10 SD card. Pre-installed ones were sold out http://swag.raspberrypi.org/products/noobs-8gb-sd-card
 7. Heat sinks
 
-Optional:
+    Optional:
+
 8. USB console lead 3.3V cable from Adafruit.
 
 9. $9.49 case for Pi to attach to wall (behind TV) from http://www.amazon.com/Premium-Clear-Case-Raspberry-Model/dp/B00MQLB1N6/ref=wilsonslifenotes

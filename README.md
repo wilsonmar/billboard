@@ -15,7 +15,7 @@ There's Arduino, Raspberry Pi, and Tessel.
 
 Arduio boards do not have the horsepower to output to HDMI.
 
-Coming August of 2015 is the $35 Tessel 2 from Technical Machines https://tessel.io/
+Coming August 2015 is the $35 Tessel 2 from Technical Machines https://tessel.io/
 embeds Node.js in a board with WiFi.
 a 580MHz Mediatek 7620N MIPS based SoC for most processing and WiFi (802.11b/g/n) communication
 2 USB ports.
@@ -38,12 +38,13 @@ The same HATs can be plugged in. See http://elinux.org/RPi_Buying_Guide
 5. SD card. Usually 4GB. Pre-installed ones were sold out http://swag.raspberrypi.org/products/noobs-8gb-sd-card
 6. USB console lead 3.3V cable from Adafruit.
 7. Case for Pi to attach to wall (behind TV)
+
 8. TV mount on wall.
 9. Optional: Wi-Fi adapter that supports the RTL8192cu chipset, and an external power supply.
 
 
 # Setup Raspberry Pi
-Unlike a PC or a Mac, one needs to do quite a bit more to configure the hardware, operating system.
+Unlike a PC or a Mac, one needs to do quite a lot more to configure the hardware and operating system.
 
 https://learn.adafruit.com/adafruit-raspberry-pi-lesson-1-preparing-and-sd-card-for-your-raspberry-pi?view=all
 
@@ -57,7 +58,7 @@ http://elinux.org/R-Pi_Troubleshooting
 is used by people who connect sensors, LEDs, buttons, servos, etc to their Pi http://learn.adafruit.com/adafruit-raspberry-pi-educational-linux-distro/
 * NOOBS (Net Out Of the Box)
 * Arh
-* XBMC
+* XBMC (Xbox Media Center) show videos, pictures, and music.
 
 http://elinux.org/RPi_Easy_SD_Card_Setup
 
@@ -68,7 +69,8 @@ On a Mac https://github.com/RayViljoen/Raspberry-PI-SD-Installer-OS-X
 4. Label the SD card
 5. Make a backup of the SD card.
 
-## First-time Configuration
+
+## Boot-up Configuration
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-2-first-time-configuration?view=all
 
 1. Hook up the TV via HDMI connector.
@@ -78,7 +80,7 @@ https://learn.adafruit.com/adafruits-raspberry-pi-lesson-2-first-time-configurat
 5. Configure memory for graphics.
 6. Configure for SSH
 
-## SSH
+## SSH for Headless Mode
 http://elinux.org/RPi_A_Method_for_ssh_blind_login
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh?view=all
 
@@ -89,6 +91,8 @@ https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh?view=all
 4. ssh 192.168.1.13 -l pi
 
 http://elinux.org/RPi_Wheezy_VNC
+
+The default password is pi and raspberry.
 
 ## Console cable
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable?view=all
@@ -123,6 +127,8 @@ https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup?view=al
 configure Wi-Fi
 
 ## GPIO for other sensors
+REMEMBER: The Raspberry Pi runs 3.3V rather than th 5V on Arduino.
+
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup
 1. sudo apt-get update
 2. Git
@@ -134,6 +140,8 @@ http://www.modern-industry.com/articles/7-super-simple-raspberry-pi-video-kiosk
 
 # Not reinventing the wheel
 The above is the collective wisdom from several others who have written about similar quest than mine.
+
+
 
 https://github.com/MobilityLab/TransitScreen/wiki/Raspberry-Pi
 Kiosk Mode

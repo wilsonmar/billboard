@@ -23,7 +23,7 @@ a 580MHz Mediatek 7620N MIPS based SoC for most processing and WiFi (802.11b/g/n
 So for early 2015, the mothboard is Raspberry Pi.
 
 The Raspberry Pi 2 Model B came out in 2014 with a full Gigabyte of RAM.
-Prior Pis had 512MB RAM. 
+Prior Pi B+ had 512MB RAM. 
 http://www.linux.com/news/embedded-mobile/mobile-linux/813223-performance-testing-the-new-35-raspberry-pi-2-
 
 It's ARM processor (900 Mhz Coretext v7 quadcore) is similar to what Windows Surface tablets use.
@@ -44,19 +44,25 @@ There are several editions of the Raspberry Pi.
 
 5. $44.99 Raspberry Pi board from http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I/ref=wilsonslifenotes
 6. 8 GB Class 10 SD card. Pre-installed ones were sold out http://swag.raspberrypi.org/products/noobs-8gb-sd-card
-7. Heat sinks
+
+7. Heat sink keep the Pi cool. The one with a fan for $24.99 
+at http://www.amazon.com/Raspberry-Forged-Copper-Heatsink-Micro/dp/B00JT1P0I8/ref=wilsonslifenotes
+has forged copper that insulates better than aluminium $12.99 version at http://www.amazon.com/Raspberry-Model-Copper-Heatsink-Forged/dp/B00MR14F4W/ref=wilsonslifenotes
 
     Optional:
 
 8. USB console lead 3.3V cable from Adafruit.
 
-9. $9.49 case for Pi to attach to wall (behind TV) from http://www.amazon.com/Premium-Clear-Case-Raspberry-Model/dp/B00MQLB1N6/ref=wilsonslifenotes
-not needed if it's in the back of the TV.
+9. A case is not needed if the Pi will be in the back of the TV. But if you do need a case, get a case that comes with heat sinks. To attach to wall (behind TV), ge thte $14.99 Zebra case that allows room for HDMI cable connector. http://www.amazon.com/gp/product/B00M6G9YBM/ref=wilsonslifenotes
+Thus, if you use a HDMI cable, don't get the smaller $9.49 case for Pi from http://www.amazon.com/Premium-Clear-Case-Raspberry-Model/dp/B00MQLB1N6/ref=wilsonslifenotes
 
 10. Instead of a power supply (5 volt 2000mA), run off USB on the TV. This would turn off the Pi when the TV is powered down.
 
 11. $9.99 EDIMax Wi-fi for USB adapter is http://www.amazon.com/gp/product/B003MTTJOY/ref=wilsonslifenotes It supports the Realtech RTL8192cu chipset, and an external power supply. 
 This is not needed if all media is self-contained in kiosk mode.
+
+12. $29.99 Infrared for MCE (Media Center Edition) (RC6) remotes
+http://www.amazon.com/Raspberry-MicroSD-OpenElec-Module-Remote/dp/B00SM4UZIS/ref=wilsonslifenotes
 
 
 # Setup Raspberry Pi
@@ -77,7 +83,7 @@ is used by people who connect sensors, LEDs, buttons, servos, etc to their Pi ht
 
 ## Media Players
 
-* XBMC (Xbox Media Center) show videos, pictures, and music. 
+* XBMC (Xbox Media Center) from OpenELEC shows videos, pictures, and music. 
 
 * https://plex.tv/ collects your media and provides DNLA support for showing on various screens on the same wi-fi (which may stutter if the speed is not good).
 

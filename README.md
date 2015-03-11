@@ -18,15 +18,19 @@ Arduino boards do not have the horsepower to output to HDMI.
 Coming August 2015 is the $35 Tessel 2 from Technical Machines https://tessel.io/
 embeds Node.js in a board with WiFi.
 a 580MHz Mediatek 7620N MIPS based SoC for most processing and WiFi (802.11b/g/n) communication
-2 USB ports.
+2 USB ports. It doesn't have a HDMI port because it's meant to be used wth an LCD suc as this:
+http://tessel.hackster.io/sidwarkd/tessel-nokia5110
 
 So for early 2015, the mothboard is Raspberry Pi.
 
 The Raspberry Pi 2 Model B came out in 2014 with a full Gigabyte of RAM.
 Prior Pi B+ had 512MB RAM. 
 http://www.linux.com/news/embedded-mobile/mobile-linux/813223-performance-testing-the-new-35-raspberry-pi-2-
+https://www.youtube.com/watch?v=Xo8RT8Wpv6w
+by the Raspberry Pi 2B.
 
-It's ARM processor (900 Mhz Coretext v7 quadcore) is similar to what Windows Surface tablets use.
+It's ARM processor is similar to what Windows Surface tablets use
+(from 700 to 900 Mhz Coretext v7 quadcore BCM2836 for those in the know). 
 
 Hardware-wise, the Pi 2 keeps the same shape, connectors and mounting holes as the Raspberry Pi B+. 
 The same HATs can be plugged in. See http://elinux.org/RPi_Buying_Guide
@@ -38,12 +42,14 @@ There are several editions of the Raspberry Pi.
 1. TV.
 2. UPS battery for TV.
 3. TV mount on wall.
-4. HDMI cable
+4. HDMI cable. The length depends on where the Pi will be mounted. Get HDMI cables that are flexible.
 
     Don't get the $69.99 kit at http://www.amazon.com/Guide-Clear-Case-Power-Supply-WiFi-Dongle-Kingston-Adapter-HDMI/dp/B00MV6TAJI/ref=wilsonslifenotes because its wifi chip is crap (13 second ping vs 2 on others).
 
 5. $44.99 Raspberry Pi board from http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I/ref=wilsonslifenotes
-6. 8 GB Class 10 SD card. Pre-installed ones were sold out http://swag.raspberrypi.org/products/noobs-8gb-sd-card
+
+6. 8 GB Class 10 micro SD card. The sames ones used in cameras.
+Pre-installed ones were sold out http://swag.raspberrypi.org/products/noobs-8gb-sd-card
 
 7. Heat sink keep the Pi cool. The one with a fan for $24.99 
 at http://www.amazon.com/Raspberry-Forged-Copper-Heatsink-Micro/dp/B00JT1P0I8/ref=wilsonslifenotes
@@ -51,7 +57,7 @@ has forged copper that insulates better than aluminium $12.99 version at http://
 
     Optional:
 
-8. USB console lead 3.3V cable from Adafruit.
+8. USB console lead 3.3V internal cable from Adafruit.
 
 9. A case is not needed if the Pi will be in the back of the TV. But if you do need a case, get a case that comes with heat sinks. To attach to wall (behind TV), ge thte $14.99 Zebra case that allows room for HDMI cable connector. http://www.amazon.com/gp/product/B00M6G9YBM/ref=wilsonslifenotes
 Thus, if you use a HDMI cable, don't get the smaller $9.49 case for Pi from http://www.amazon.com/Premium-Clear-Case-Raspberry-Model/dp/B00MQLB1N6/ref=wilsonslifenotes
@@ -73,13 +79,19 @@ https://learn.adafruit.com/adafruit-raspberry-pi-lesson-1-preparing-and-sd-card-
 http://elinux.org/R-Pi_Troubleshooting
 
 ## Operating System on SD card
+Some who sell SD cards offer the operating system pre-loaded.
+If you are using a blank one from Costco or somewhere:
+
 1. Download one of several operating system distos (Raspbian, Arch, XBMC, NooBs, etc). 
 
-* Rasbian is the default standard maintained for Raspberry Pi "wheezy" http://www.raspberrypi.org/downloads
-* Occidentalis (from the Latin name for the raspberry, Rubus Occidentalis)
-is used by people who connect sensors, LEDs, buttons, servos, etc to their Pi http://learn.adafruit.com/adafruit-raspberry-pi-educational-linux-distro/
-* NOOBS (Net Out Of the Box)
-* Arh
+    * Rasbian is the default standard maintained for Raspberry Pi "wheezy" http://www.raspberrypi.org/downloads
+    
+    * Occidentalis (from the Latin name for the raspberry, Rubus Occidentalis)
+    is used by people who connect sensors, LEDs, buttons, servos, etc to their Pi                 http://learn.adafruit.com/adafruit-raspberry-pi-educational-linux-distro/
+    
+    * NOOBS (Net Out Of the Box)
+    
+    * Arh
 
 ## Media Players
 
@@ -89,7 +101,7 @@ is used by people who connect sensors, LEDs, buttons, servos, etc to their Pi ht
 
 The premium subscription auto-downloads movie trailers as well as your media, then plays them on XBox and Vizio TVs. First register after getting [http://www.raspberrypi.com/license-keys/] to download the necessary codecs for MPEG-2 and VC1.
 
-* (Open Source Media Center) from https://osmc.tv/download/
+* (Open Source Media Center) from https://osmc.tv/, who are part of the 
 
 http://elinux.org/RPi_Easy_SD_Card_Setup
 
@@ -111,6 +123,7 @@ https://learn.adafruit.com/adafruits-raspberry-pi-lesson-2-first-time-configurat
 5. Configure memory for graphics.
 6. Configure for SSH
 
+
 ## SSH for Headless Mode
 http://elinux.org/RPi_A_Method_for_ssh_blind_login
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh?view=all
@@ -130,6 +143,17 @@ https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable
 To supply the power for your Pi so you do not need keyboard, mouse or display attached to the Pi to log into it.
 
 Pressing Alt-F1 through Alt-F12 will switch you one of them. If X11 has already started, you’ll often need to press Ctrl-Alt-F1 to ‘break out’, and just Alt-F2 etc thereafter. X11 will take the next available slot, since the default Raspbian defines six consoles, this is usually at Alt-F7.
+
+## Content Server Apps
+
+http://www.concerto-signage.org/
+is a Ruby-on-Rails app as a Debian package
+at https://github.com/concerto/concerto/wiki/Installing-Concerto-2
+developed as open source / free by students at Rensselaer Polytechnic Institute (also known as RPI), 
+the oldest technical university in the English-speaking world.
+Version 1 began in the spring of 2008.
+Version 2 became avaialable 2014.
+http://demo.concerto-signage.org
 
 ## Chromium OS
 https://lokir.wordpress.com/2012/09/16/raspberry-pi-kiosk-mode-with-chromium/

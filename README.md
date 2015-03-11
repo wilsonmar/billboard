@@ -13,34 +13,49 @@ starting from a Minimum Viable Product, then adding more capabilities:
 # Board choices
 There's Arduino, Raspberry Pi, and Tessel.
 
-Arduio boards do not have the horsepower to output to HDMI.
+Arduino boards do not have the horsepower to output to HDMI.
 
 Coming August 2015 is the $35 Tessel 2 from Technical Machines https://tessel.io/
 embeds Node.js in a board with WiFi.
 a 580MHz Mediatek 7620N MIPS based SoC for most processing and WiFi (802.11b/g/n) communication
 2 USB ports.
 
-So for early 2015, the hardware is Raspberry Pi.
+So for early 2015, the mothboard is Raspberry Pi.
+
+The Raspberry Pi 2 Model B came out in 2014 with a full Gigabyte of RAM.
+Prior Pis had 512MB RAM. 
+http://www.linux.com/news/embedded-mobile/mobile-linux/813223-performance-testing-the-new-35-raspberry-pi-2-
+
+It's ARM processor (900 Mhz Coretext v7 quadcore) is similar to what Windows Surface tablets use.
+
+Hardware-wise, the Pi 2 keeps the same shape, connectors and mounting holes as the Raspberry Pi B+. 
+The same HATs can be plugged in. See http://elinux.org/RPi_Buying_Guide
+
 
 # Ingredients to buy
 There are several editions of the Raspberry Pi.
 
 1. TV.
 2. UPS battery for TV.
-3. HDMI cable.
-4. The Raspberry Pi 2 Model B came out in 2014 with an upgraded ARMv7 quadcore processor, and a full Gigabyte of RAM.
-Prior Pis had 512MB RAM. 
-http://www.linux.com/news/embedded-mobile/mobile-linux/813223-performance-testing-the-new-35-raspberry-pi-2-
+3. TV mount on wall.
+4. HDMI cable
 
-Hardware-wise, the Pi 2 keeps the same shape, connectors and mounting holes as the Raspberry Pi B+. 
-The same HATs can be plugged in. See http://elinux.org/RPi_Buying_Guide
+Don't get the $69.99 kit at http://www.amazon.com/Guide-Clear-Case-Power-Supply-WiFi-Dongle-Kingston-Adapter-HDMI/dp/B00MV6TAJI/ref=wilsonslifenotes because its wifi chip is crap (13 second ping vs 2 on others).
 
-5. SD card. Usually 4GB. Pre-installed ones were sold out http://swag.raspberrypi.org/products/noobs-8gb-sd-card
-6. USB console lead 3.3V cable from Adafruit.
-7. Case for Pi to attach to wall (behind TV)
+5. $44.99 Raspberry Pi board from http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I/ref=wilsonslifenotes
+6. 8 GB Class 10 SD card. Pre-installed ones were sold out http://swag.raspberrypi.org/products/noobs-8gb-sd-card
+7. Heat sinks
 
-8. TV mount on wall.
-9. Optional: Wi-Fi adapter that supports the RTL8192cu chipset, and an external power supply.
+Optional:
+8. USB console lead 3.3V cable from Adafruit.
+
+9. $9.49 case for Pi to attach to wall (behind TV) from http://www.amazon.com/Premium-Clear-Case-Raspberry-Model/dp/B00MQLB1N6/ref=wilsonslifenotes
+not needed if it's in the back of the TV.
+
+10. Instead of a power supply (5 volt 2000mA), run off USB on the TV. This would turn off the Pi when the TV is powered down.
+
+11. $9.99 EDIMax Wi-fi for USB adapter is http://www.amazon.com/gp/product/B003MTTJOY/ref=wilsonslifenotes It supports the Realtech RTL8192cu chipset, and an external power supply. 
+This is not needed if all media is self-contained in kiosk mode.
 
 
 # Setup Raspberry Pi
@@ -58,7 +73,16 @@ http://elinux.org/R-Pi_Troubleshooting
 is used by people who connect sensors, LEDs, buttons, servos, etc to their Pi http://learn.adafruit.com/adafruit-raspberry-pi-educational-linux-distro/
 * NOOBS (Net Out Of the Box)
 * Arh
-* XBMC (Xbox Media Center) show videos, pictures, and music.
+
+## Media Players
+
+* XBMC (Xbox Media Center) show videos, pictures, and music. 
+
+* https://plex.tv/ collects your media and provides DNLA support for showing on various screens on the same wi-fi (which may stutter if the speed is not good).
+
+The premium subscription auto-downloads movie trailers as well as your media, then plays them on XBox and Vizio TVs. First register after getting [http://www.raspberrypi.com/license-keys/] to download the necessary codecs for MPEG-2 and VC1.
+
+* (Open Source Media Center) from https://osmc.tv/download/
 
 http://elinux.org/RPi_Easy_SD_Card_Setup
 
@@ -112,7 +136,7 @@ sudo apt-get update && apt-get upgrade -y
 sudo apt-get install chromium x11-xserver-utils unclutter
 ```
 
-2. We need to prevent screen from going blank and disable screen saver.
+To prevent screen from going blank and disable screen saver.
 – edit /etc/xdg/lxsession/LXDE/autostart and comment # screen saver line and add those lines:
 
 ```
@@ -125,6 +149,9 @@ sudo apt-get install chromium x11-xserver-utils unclutter
 ## Wireless Control via Wi-Fi
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup?view=all
 configure Wi-Fi
+
+## USB hard drive to hold terabytes of movies
+omxplayer command 
 
 ## GPIO for other sensors
 REMEMBER: The Raspberry Pi runs 3.3V rather than th 5V on Arduino.

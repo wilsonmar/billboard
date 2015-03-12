@@ -1,6 +1,10 @@
 This file describes components which were considered but not included.
 
-# Tessel
+# Boards:
+## Arduino
+Arduino boards do not have the horsepower to output to HDMI.
+
+## Tessel
 Coming August 2015 is the $35 Tessel 2 from Technical Machines https://tessel.io/
 embeds Node.js in a board with WiFi.
 a 580MHz Mediatek 7620N MIPS based SoC for most processing and WiFi (802.11b/g/n) communication

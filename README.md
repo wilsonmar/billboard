@@ -10,19 +10,7 @@ starting from a Minimum Viable Product, then adding more capabilities:
 6. Interact with what is playing via the web server on the Pi running an HTML5 jQuery app.
 7. Videos using https://flowplayer.org/player/
 
-# Board choices
-There's Arduino, Raspberry Pi, and Tessel.
-
-Arduino boards do not have the horsepower to output to HDMI.
-
-Coming August 2015 is the $35 Tessel 2 from Technical Machines https://tessel.io/
-embeds Node.js in a board with WiFi.
-a 580MHz Mediatek 7620N MIPS based SoC for most processing and WiFi (802.11b/g/n) communication
-2 USB ports. It doesn't have a HDMI port because it's meant to be used wth an LCD suc as this:
-http://tessel.hackster.io/sidwarkd/tessel-nokia5110
-
-So for early 2015, the mothboard is Raspberry Pi.
-
+# Board choice - Raspberry Pi
 The Raspberry Pi 2 Model B came out in 2014 with a full Gigabyte of RAM.
 Prior Pi B+ had 512MB RAM. 
 http://www.linux.com/news/embedded-mobile/mobile-linux/813223-performance-testing-the-new-35-raspberry-pi-2-
@@ -105,6 +93,10 @@ The premium subscription auto-downloads movie trailers as well as your media, th
 
 http://elinux.org/RPi_Easy_SD_Card_Setup
 
+* Windows 10 (when available 2015) will be offered free on Raspberry Pi 2, 
+according to Kevin Dallas (Manager of Microsoft's IoT Group).
+See https://www.youtube.com/watch?v=etOvY10WXgA
+
 2. Download the SD card formatter program. On a PC it's fedora-arm-installer.exe from http://fedoraproject.org/wiki/Fedora_ARM_Installer#Windows_Vista_.26_7
 On a Mac https://github.com/RayViljoen/Raspberry-PI-SD-Installer-OS-X
 
@@ -156,11 +148,11 @@ Version 2 became avaialable 2014.
 http://demo.concerto-signage.org
 
 ## Chromium OS
+http://www.chromium.org/chromium-os
+
 https://lokir.wordpress.com/2012/09/16/raspberry-pi-kiosk-mode-with-chromium/
 
 http://blogs.wcode.org/2013/09/howto-boot-your-raspberry-pi-into-a-fullscreen-browser-kiosk/
-
-http://www.chromium.org/chromium-os
 
 ```
 sudo apt-get update && apt-get upgrade -y
@@ -184,26 +176,12 @@ configure Wi-Fi
 ## USB hard drive to hold terabytes of movies
 omxplayer command 
 
-## GPIO for other sensors
-REMEMBER: The Raspberry Pi runs 3.3V rather than th 5V on Arduino.
-
-https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup
-1. sudo apt-get update
-2. Git
-3. git Python
-3. GPIO (General Purpose Input Output) 
-
-http://www.modern-industry.com/articles/7-super-simple-raspberry-pi-video-kiosk
-
-
 # Not reinventing the wheel
 The above is the collective wisdom from several others who have written about similar quest than mine.
 
 
-
 https://github.com/MobilityLab/TransitScreen/wiki/Raspberry-Pi
 Kiosk Mode
-
 
 https://learn.adafruit.com/raspberry-pi-video-looper
 

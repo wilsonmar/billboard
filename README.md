@@ -3,10 +3,9 @@ Here are my notes on how I went about creating a low-cost TV kiosk on a Raspberr
 starting from a Minimum Viable Product, then adding more capabilities:
 
 1. Display single photo stored on SD card. No sound. No wi-fi (SSH in)
-2. Display photos stored on USB stick.
-3. Display photos updated over wi-fi from a PC/Mac.
-4. Computer turns itself on and off automatially.
-5. Turn TV on and off automatically.
+2. <a href="#USB_Hard_drive">Display photos stored on USB stick/hard drive.</a>
+3. <a href="#WirelessControl">Display photos updated over wi-fi from a PC/Mac.</a>
+4. Turn TV on and off automatically.
 6. Interact with what is playing via the web server on the Pi running an HTML5 jQuery app.
 7. Videos using https://flowplayer.org/player/
 
@@ -34,7 +33,8 @@ There are several editions of the Raspberry Pi.
 
     Don't get the $69.99 kit at http://www.amazon.com/Guide-Clear-Case-Power-Supply-WiFi-Dongle-Kingston-Adapter-HDMI/dp/B00MV6TAJI/ref=wilsonslifenotes because its wifi chip is crap (13 second ping vs 2 on others).
 
-5. Raspberry Pi SoC board. $44.99 from http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I/ref=wilsonslifenotes
+5. Raspberry Pi SoC board. $44.99 from http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I/ref=wilsonslifenotes and
+$44.95 from https://www.adafruit.com/products/2358
 $35 from http://www.newark.com/raspberry-pi/raspberrypi-2-modb-1gb/sbc-raspberry-pi-2-model-b-1gb/dp/38Y6467
 
 6. 8 GB Class 10 micro SD card. The sames ones used in cameras.
@@ -46,7 +46,8 @@ has forged copper that insulates better than aluminium $12.99 version at http://
 
     Optional:
 
-8. USB console lead 3.3V internal cable from Adafruit.
+8. USB console lead 3.3V internal cable. $9.95 from Adafruit.
+https://www.adafruit.com/products/954
 
 9. A case is not needed if the Pi will be in the back of the TV. But if you do need a case, get a case that comes with heat sinks. To attach to wall (behind TV), ge thte $14.99 Zebra case that allows room for HDMI cable connector. http://www.amazon.com/gp/product/B00M6G9YBM/ref=wilsonslifenotes
 Thus, if you use a HDMI cable, don't get the smaller $9.49 case for Pi from http://www.amazon.com/Premium-Clear-Case-Raspberry-Model/dp/B00MQLB1N6/ref=wilsonslifenotes
@@ -58,8 +59,23 @@ Thus, if you use a HDMI cable, don't get the smaller $9.49 case for Pi from http
 11. $9.99 EDIMax Wi-fi for USB adapter is http://www.amazon.com/gp/product/B003MTTJOY/ref=wilsonslifenotes It supports the Realtech RTL8192cu chipset, and an external power supply. 
 This is not needed if all media is self-contained in kiosk mode.
 
-12. $29.99 Infrared for MCE (Media Center Edition) (RC6) remotes
+## <a name="USB_Hard_drive"></a> USB hard drive 
+can hold terabytes of movies
+
+omxplayer command 
+
+## <a name="WirelessControl"></a> Wireless Control via Wi-Fi
+https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup?view=all
+configure Wi-Fi
+
+## <a name="Infrared"></a> Infrared control
+
+The Pi can control the TV by sending an infrared signal.
+It would need to bounce the signal off a wall if the Pi is next to the TV.
+
+$29.99 Infrared for MCE (Media Center Edition) (RC6) remotes
 http://www.amazon.com/Raspberry-MicroSD-OpenElec-Module-Remote/dp/B00SM4UZIS/ref=wilsonslifenotes
+
 
 
 # <a name="BoardSetup"></a> Setup Raspberry Pi
@@ -171,13 +187,6 @@ To prevent screen from going blank and disable screen saver.
 @xset s noblank
 @chromium --kiosk --incognito http://some.web.
 ```
-
-## <a name="Wireless"></a> Wireless Control via Wi-Fi
-https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup?view=all
-configure Wi-Fi
-
-## <a name="Hard_drive"></a> USB hard drive to hold terabytes of movies
-omxplayer command 
 
 # Not reinventing the wheel
 The above is the collective wisdom from several others who have written about similar quest than mine.

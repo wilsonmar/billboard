@@ -24,7 +24,7 @@ Hardware-wise, the Pi 2 keeps the same shape, connectors and mounting holes as t
 The same HATs can be plugged in. See http://elinux.org/RPi_Buying_Guide
 
 
-# Ingredients to buy
+# <a name="Ingredients"></a> Ingredients to buy
 There are several editions of the Raspberry Pi.
 
 1. TV.
@@ -34,7 +34,8 @@ There are several editions of the Raspberry Pi.
 
     Don't get the $69.99 kit at http://www.amazon.com/Guide-Clear-Case-Power-Supply-WiFi-Dongle-Kingston-Adapter-HDMI/dp/B00MV6TAJI/ref=wilsonslifenotes because its wifi chip is crap (13 second ping vs 2 on others).
 
-5. $44.99 Raspberry Pi board from http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I/ref=wilsonslifenotes
+5. Raspberry Pi SoC board. $44.99 from http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I/ref=wilsonslifenotes
+$35 from http://www.newark.com/raspberry-pi/raspberrypi-2-modb-1gb/sbc-raspberry-pi-2-model-b-1gb/dp/38Y6467
 
 6. 8 GB Class 10 micro SD card. The sames ones used in cameras.
 Pre-installed ones were sold out http://swag.raspberrypi.org/products/noobs-8gb-sd-card
@@ -59,14 +60,14 @@ This is not needed if all media is self-contained in kiosk mode.
 http://www.amazon.com/Raspberry-MicroSD-OpenElec-Module-Remote/dp/B00SM4UZIS/ref=wilsonslifenotes
 
 
-# Setup Raspberry Pi
+# <a name="BoardSetup"></a> Setup Raspberry Pi
 Unlike a PC or a Mac, one needs to do quite a lot more to configure the hardware and operating system.
 
 https://learn.adafruit.com/adafruit-raspberry-pi-lesson-1-preparing-and-sd-card-for-your-raspberry-pi?view=all
 
 http://elinux.org/R-Pi_Troubleshooting
 
-## Operating System on SD card
+## <a name="OS_Setup"></a> Operating System on SD card
 Some who sell SD cards offer the operating system pre-loaded.
 If you are using a blank one from Costco or somewhere:
 
@@ -81,7 +82,7 @@ If you are using a blank one from Costco or somewhere:
     
     * Arh
 
-## Media Players
+## <a name="App_setup"></a> App Media Players
 
 * XBMC (Xbox Media Center) from OpenELEC shows videos, pictures, and music. 
 
@@ -105,7 +106,7 @@ On a Mac https://github.com/RayViljoen/Raspberry-PI-SD-Installer-OS-X
 5. Make a backup of the SD card.
 
 
-## Boot-up Configuration
+## <a name="Boot-up"></a> Boot-up Configuration
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-2-first-time-configuration?view=all
 
 1. Hook up the TV via HDMI connector.
@@ -116,7 +117,7 @@ https://learn.adafruit.com/adafruits-raspberry-pi-lesson-2-first-time-configurat
 6. Configure for SSH
 
 
-## SSH for Headless Mode
+## <a name="Headless"></a> SSH for Headless Mode
 http://elinux.org/RPi_A_Method_for_ssh_blind_login
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh?view=all
 
@@ -130,13 +131,13 @@ http://elinux.org/RPi_Wheezy_VNC
 
 The default password is pi and raspberry.
 
-## Console cable
+## <a name="Console_cable"></a> Console cable
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable?view=all
 To supply the power for your Pi so you do not need keyboard, mouse or display attached to the Pi to log into it.
 
 Pressing Alt-F1 through Alt-F12 will switch you one of them. If X11 has already started, you’ll often need to press Ctrl-Alt-F1 to ‘break out’, and just Alt-F2 etc thereafter. X11 will take the next available slot, since the default Raspbian defines six consoles, this is usually at Alt-F7.
 
-## Content Server Apps
+## <a name="Content_Server"></a> Content Server Apps
 
 http://www.concerto-signage.org/
 is a Ruby-on-Rails app as a Debian package
@@ -147,7 +148,7 @@ Version 1 began in the spring of 2008.
 Version 2 became avaialable 2014.
 http://demo.concerto-signage.org
 
-## Chromium OS
+## <a name="Chromium"></a> Chromium OS
 http://www.chromium.org/chromium-os
 
 https://lokir.wordpress.com/2012/09/16/raspberry-pi-kiosk-mode-with-chromium/
@@ -169,16 +170,15 @@ To prevent screen from going blank and disable screen saver.
 @chromium --kiosk --incognito http://some.web.
 ```
 
-## Wireless Control via Wi-Fi
+## <a name="Wireless"></a> Wireless Control via Wi-Fi
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup?view=all
 configure Wi-Fi
 
-## USB hard drive to hold terabytes of movies
+## <a name="Hard_drive"></a> USB hard drive to hold terabytes of movies
 omxplayer command 
 
 # Not reinventing the wheel
 The above is the collective wisdom from several others who have written about similar quest than mine.
-
 
 https://github.com/MobilityLab/TransitScreen/wiki/Raspberry-Pi
 Kiosk Mode

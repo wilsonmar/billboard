@@ -51,6 +51,8 @@ has forged copper that insulates better than aluminium $12.99 version at http://
 9. A case is not needed if the Pi will be in the back of the TV. But if you do need a case, get a case that comes with heat sinks. To attach to wall (behind TV), ge thte $14.99 Zebra case that allows room for HDMI cable connector. http://www.amazon.com/gp/product/B00M6G9YBM/ref=wilsonslifenotes
 Thus, if you use a HDMI cable, don't get the smaller $9.49 case for Pi from http://www.amazon.com/Premium-Clear-Case-Raspberry-Model/dp/B00MQLB1N6/ref=wilsonslifenotes
 
+    $19.50 for Mahogany Wood Case (Pi Borg Plus) for Raspberry Pi B+ and 2B at  http://www.amazon.com/Pi-Borg-Plus-Ultimate-Raspberry/dp/B00NL7TFKU/ref=wilsonslifenotes
+
 10. Instead of a power supply (5 volt 2000mA), run off USB on the TV. This would turn off the Pi when the TV is powered down.
 
 11. $9.99 EDIMax Wi-fi for USB adapter is http://www.amazon.com/gp/product/B003MTTJOY/ref=wilsonslifenotes It supports the Realtech RTL8192cu chipset, and an external power supply. 

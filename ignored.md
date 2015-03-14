@@ -22,3 +22,8 @@ This is instead of a loop constantly checking the state of a button to see if th
 node.js uses Unix pipeline 
 
 Lua is the language.
+
+## Play YouTube on Raspberry Pi
+https://github.com/spygi/personal/tree/master/raspberry-youtube
+is a Python script that runs on XBMC.
+

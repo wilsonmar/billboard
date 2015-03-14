@@ -27,3 +27,11 @@ Lua is the language.
 https://github.com/spygi/personal/tree/master/raspberry-youtube
 is a Python script that runs on XBMC.
 
+## Chromium App Samples
+http://www.chromium.org/
+
+https://github.com/GoogleChrome/chrome-app-samples
+
+## Git
+http://www.chromium.org/developers/fast-intro-to-git-internals
+

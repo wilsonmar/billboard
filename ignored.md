@@ -4,6 +4,10 @@ This file describes components which were considered but not included.
 ## Arduino
 Arduino boards do not have the horsepower to output to HDMI.
 
+Cloudsto at http://www.cloudsto.com/products/android-mini-pc-s.html
+in the UK makes several models of miniPCs for around $100 that has HDMI and a SD card.
+Some have Bluetooth as well.
+
 ## Tessel
 Coming August 2015 is the $35 Tessel 2 from Technical Machines https://tessel.io/
 embeds Node.js in a board with WiFi.

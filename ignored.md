@@ -39,3 +39,5 @@ https://github.com/GoogleChrome/chrome-app-samples
 ## Git
 http://www.chromium.org/developers/fast-intro-to-git-internals
 
+https://www.kickstarter.com/projects/1895460425/pijuice-a-portable-project-platform-for-every-rasp?ref=category_popular
+

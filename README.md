@@ -21,6 +21,7 @@ It's ARM processor is similar to what Windows Surface tablets use
 
 Hardware-wise, the Pi 2 keeps the same shape, connectors and mounting holes as the Raspberry Pi B+. 
 The same HATs can be plugged in. See http://elinux.org/RPi_Buying_Guide
+and http://en.wikipedia.org/wiki/Raspberry_Pi
 
 
 # <a name="Ingredients"></a> Ingredients to buy

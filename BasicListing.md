@@ -9,8 +9,6 @@ Options: Power plug with chord $10 more.
 Description: 
 This is the simplest way to show your pictures on a TV screen.
 
-Images are rotated every 4 seconds.
-
 1. Touch something metal to discharge static each time before you handle electronics.
 2. On your PC or Mac, copy photos onto the USB memory chip (provided)
 3. Plug the USB chip it in the USB port on the box.
@@ -24,7 +22,7 @@ Images are rotated every 4 seconds.
 9. Adjust the position of the box. (Some like the unit visible so they can see the red night light.)
 
 0. Start the TV. The boot-up sequence scrolls by, then the program catalogs all photo files on the USB stick, which takes several minutes.
-10. Enjoy!
+10. Enjoy! Images are rotated every 4 seconds. If you want a different speed, add a note to the order.
 
 We have other products that are more sophisticated, to show videos from other machines
 or provide interaction via smart phones and tablets.

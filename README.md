@@ -199,6 +199,7 @@ https://learn.adafruit.com/raspberry-pi-video-looper
 
 OMX player of H264 video format
 
-HelloVideo plays raw H264 with no sound
+HelloVideo plays raw H264 with no sound.
 
-
+http://blogs.technet.com/b/bizspark_featured_startups/archive/2015/03/17/featured-bizspark-startup-senseanywhere.aspx
+has sensors to track refrigerated boxes
